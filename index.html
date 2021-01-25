@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="base.css">
+    <title>Rainbow CV</title>
+</head>
+<body>
+    <div id="loader">
+        <p class="click_me">Click Me</p>
+        <div class="loading">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <p class="loading_text">Loading</p>
+    </div>
+    <header>
+        <div class="welcome">
+            <div class="block">
+                    <p class="tagline">
+                        <span class="tagline-skill"><span class="tagline-skill_inner">Filip Tecza</span></span>
+                <p>Hi, I’m Filip an inspiring programmer. I love the IT field and everything connected to programming. Always ready for something new. Constantly improving myself by learning new languages and new skills. Looking forward to working with you!</p>
+            </div>
+        </div>
+        <div class="elements">  
+                <div class="element"><span><a href="mailto:teczaphilip@gmail.com">Email</a></span></div>
+                <div class="element"><span><a href="tel:+48666096756">Signal</a></span></div>
+                <div class="element"><span><a href="https://www.instagram.com/philiprainbow/" target="_blank">Instagram</a></span></div>
+                <div class="element"><span><a href="https://www.linkedin.com/in/philiprainbow/" target="_blank">LinkedIn</a></span></div>
+                <div class="element"><span><a href="/images/myw3schoolsimage.jpg" download>CV</a></span></div>
+                <div class="element"><span><a href="tel:+48666096756">Phone</a></span></div>
+        </div>
+    </header>
+    <div class="bottomMenu">Still working on it <div><span class="random_shit">🦄</span></div> &copy; Rainbow</div>
+    <main>
+        <div class="photo-grid">
+            <div class="card card-tall" style="background-image: url('img/1.JPG');"></div>
+            <div class="card card-wide" style="background-image: url('img/2.JPG');"></div>
+            <div class="card card-tall" style="background-image: url('img/3.JPG');"></div>
+            <div class="card card-wide" style="background-image: url('img/7.JPG');"></div>
+            <div class="card card-wide" style="background-image: url('https://images.unsplash.com/photo-1564052666203-a7ccd697f5fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1098&q=80');"></div>
+            <div class="card card-tall" style="background-image: url('img/5.JPG');"></div>
+            <div class="card card-tall" style="background-image: url('img/4.JPG');"></div>
+            <div class="card card-wide" style="background-image: url('img/6.JPG');"></div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(window).on('load',function(){
+    setTimeout(function(){ 
+    $(".click_me").css("opacity", "1");
+}, 1000);
+
+})
+
+$(".click_me").click(function(){
+  $( "#loader" ).fadeOut( "slow", function() {
+    // Animation complete.
+  });
+});
+    </script>
+</body>
+</html>

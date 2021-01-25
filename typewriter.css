@@ -1,0 +1,53 @@
+
+.tagline {
+  overflow: hidden;
+  background-color: #EFEFEF;
+  color: #000;
+}
+
+.tagline-skill {
+  position: relative;
+  font-size: 1.5em;
+  padding-top: .75em;
+  animation: animatetotop 10s steps(1) infinite;
+}
+
+.tagline-skill_inner,
+.tagline-skill-overlay {
+  display: inline-block;
+}
+
+.tagline-skill_inner {
+  position: relative;
+  line-height: 1;
+}
+
+.tagline-skill_inner:after {   
+  content: "";
+  position: absolute;
+  top:-1px;right:0;bottom:-2px;left:0;
+  border-left: 1px solid #000;
+  background-color: #EFEFEF;
+  animation: animatetoright 2s steps(35) infinite alternate;
+}
+
+@keyframes animatetoright {
+  0% {
+    left: 0;
+    margin-right: auto;
+  }
+  100% {
+    left: 100%;
+    margin-left: .6em;
+    margin-right: -.6em;
+  }
+}
+
+@keyframes animatetotop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -240px;
+  }
+}

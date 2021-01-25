@@ -1,0 +1,141 @@
+@import url('./style.css');
+@import url('./animation.css');
+@import url('./typewriter.css');
+@import url('./loader.css');
+
+body {
+    background-color: #EFEFEF;
+    color: #EFEFEF;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome {
+    max-width: 60%;
+    margin: auto;
+}
+
+.block {
+    display: block;
+    max-width: 55%;
+    text-align: left;
+    
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #000;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+
+}
+
+.element span a{
+    font-size: 42px;
+    line-height: 34px;
+    cursor: pointer;
+    color: #000;
+}
+
+.element span a:hover {
+    color: #FFCC00;
+}
+
+.element:nth-child(1){
+    grid-area: 🫀;
+}
+.element:nth-child(2){
+    grid-area: 🧠;
+}
+.element:nth-child(3){
+    grid-area: 🦴;
+}
+.element:nth-child(4){
+    grid-area: 🩸;
+}
+.element:nth-child(5){
+    grid-area: 🫁;
+}
+.element:nth-child(6){
+    grid-area: 💀;
+}
+
+.elements{
+display: grid;
+padding: 5em 5em;
+padding-right: 1.5em;
+grid-template-columns: repeat(12, 8%);
+grid-template-rows: repeat(9, 3em);
+grid-template-areas:
+"🫀  🫀  🫀  🫀  .   .   🧠 🧠  🧠  🧠  🧠  🧠"
+".   .   .   .   .   .   .   .   .   .   .   ."
+".   .   .   .   .   .   .   .   .   .   .   ."
+".   🦴  🦴  🦴   🦴  .   .   .   🩸  🩸  🩸 ."
+".   .   .   .   .   .   .   .   .   .   .   ."
+".   .   .   .   🫁  🫁  🫁  🫁  🫁  .   .   ."
+".   .   .   .   .   .   .   .   .   .   .   ."
+".   .   .   .   .   .   .   .   .   .   .   ."
+"💀  💀  💀  💀  .   .   .   .   .   .   .   ."
+}
+
+
+@media screen and (max-width: 640px){
+    .elements{
+        padding: 3em 3em 5em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 2em);
+        grid-template-areas:
+        "🫀"
+        "🦴"
+        "🧠"
+        "🫁"
+        "🩸"
+        "💀"
+        }
+}
+
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #FFCC00;
+    z-index: 50;
+    text-align: center;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.bottomMenu div{
+    display: inline-block;
+    animation: spin 2s infinite;
+}
