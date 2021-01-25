@@ -24,13 +24,6 @@
     cursor: pointer;  
 }
 
-.loading {
-	width: 200px;
-	height: 30px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
 .loading_text {
   animation: pulsing-fade 3000ms ease;
   color: #fff;
@@ -44,12 +37,25 @@
 
 /* === RAINBOW === */
 
+.loading {
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+  overflow: hidden;
+}
+
 .item {
 	float: left;
 	width: 25px;
-	height: 25px;
+	height: 30px;
   border-radius:0px;
 	animation: rainbow 2s infinite both;
+}
+
+/*** hover ***/
+
+.item:hover{
+  animation: rainbow 10s infinite both;
 }
 
 .item:nth-child(8n+2) {
