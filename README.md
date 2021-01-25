@@ -1,2 +1,2 @@
-# Rainbow_Site
+# bowrainradio.github.io
 My Website
