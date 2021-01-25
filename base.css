@@ -140,7 +140,9 @@ a {
 
 /* === RWD === */
 
-@media screen and (min-width: 600px){
+
+
+@media screen and (min-width: 1025px){
  
     .card-tall {
         grid-row: span 2 / auto;
@@ -165,5 +167,9 @@ a {
         "🫁"
         "🩸"
         "💀"
+    }
+    
+    .block {
+        max-width: 75%;
     }
 }
