@@ -1,4 +1,4 @@
-#loader{
+#loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,85 +31,51 @@
 	overflow: hidden;
 }
 
+.loading_text {
+  animation: pulsing-fade 3000ms ease;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  z-index: 100;
+  position: absolute;
+  bottom: 25%;
+  opacity: 0;
+}
+
+/* === RAINBOW === */
+
 .item {
 	float: left;
 	width: 25px;
 	height: 25px;
-    border-radius:0px;
-	background: #E7E6DD;
-	animation: disco 2s infinite both;
+  border-radius:0px;
+	animation: rainbow 2s infinite both;
 }
+
 .item:nth-child(8n+2) {
 	animation-delay: 150ms;
 }
+
 .item:nth-child(8n+3) {
 	animation-delay: 300ms;
 }
+
 .item:nth-child(8n+4) {
 	animation-delay: 450ms;
 }
+
 .item:nth-child(8n+5) {
 	animation-delay: 600ms;
 }
+
 .item:nth-child(8n+6) {
 	animation-delay: 750ms;
 }
+
 .item:nth-child(8n+7) {
 	animation-delay: 900ms;
 }
+
 .item:nth-child(8n+8) {
 	animation-delay: 1050ms;
 }
-
-
-
-@keyframes disco {
-	from, to { background: purple; }
-	20% { background: red; }
-	40% { background: gold; }
-	60% { background: limegreen; }
-	80% { background: dodgerblue; }
-}
-
-@keyframes disco_2 {
-	from, to { color: purple; }
-	20% { color: red; }
-	40% { color: gold; }
-	60% { color: limegreen; }
-	80% { color: dodgerblue; }
-}
-
-
-@keyframes pulsing-fade {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-        opacity: 0.8;
-    }
-    
-    50% {
-      opacity: 0;
-    }
-
-    75% {
-        opacity: 0.8;
-    }
-    
-    100% {
-      opacity: 0;
-    }
-
-  }
-
-.loading_text {
-    animation: pulsing-fade 3000ms ease;
-    color: #fff;
-    font-size: 2em;
-    text-transform: uppercase;
-    z-index: 100;
-    position: absolute;
-    bottom: 25%;
-    opacity: 0;
-  }

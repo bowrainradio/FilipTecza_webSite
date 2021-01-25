@@ -1,0 +1,64 @@
+
+  /* === TYPEWRITER === */
+
+@keyframes animatetoright {
+    0% {
+      left: 0;
+      margin-right: auto;
+    }
+    100% {
+      left: 100%;
+      margin-left: .6em;
+      margin-right: -.6em;
+    }
+  }
+  
+  @keyframes animatetotop {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -240px;
+    }
+  }
+
+  /* === LOADER.CSS (RAINBOW) === */
+
+@keyframes rainbow {
+	from, to { background: purple; }
+	20% { background: red; }
+	40% { background: gold; }
+	60% { background: limegreen; }
+	80% { background: dodgerblue; }
+}
+
+
+@keyframes pulsing-fade {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+    
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+
+  }
+
+ /* === FOOTER === */
+
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
