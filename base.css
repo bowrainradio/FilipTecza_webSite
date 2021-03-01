@@ -165,7 +165,7 @@ picture img {
 
 .popup a {
     color: #FFCC00;
-    border-bottom: 1px solid #FFCC00;
+    border-bottom: 1px dashed #FFCC00;
 }
 
 .popup ul {
