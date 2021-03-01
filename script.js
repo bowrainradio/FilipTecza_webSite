@@ -27,5 +27,7 @@ $(document).scroll(function () {
     }
 });
 
-
+$('.close-button').on('click', function() {
+  $('.popup').fadeOut();
+});
 

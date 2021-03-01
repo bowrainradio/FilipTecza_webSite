@@ -83,6 +83,17 @@
                 <img src="img/9-small.webp" alt="Polish Beer">
             </picture>
         </div>
+        <div class="popup">
+            <div class="close-button">[X]</div>
+            <h2>Hi Over there!</h2>
+            <p>Looking for a job <span>ASAP</span> remot position ;)<br>Sooo.. hit me up with something pls 💛</p>
+            <h3>My Contact info:</h3>
+            <ul>
+                <li>Call me: <a href="tel:+48666096756">+48 666 096 756</a></li>
+                <li>Email me: <a href="mailto:teczaphilip@gmail.com">teczaphilip@gmail.com</a></li>
+                <li><a href="files/Filip_Tecza-Resume.pdf">My Resume</a></li>
+            </ul>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -98,6 +109,9 @@
 $(".click_me").click(function(){
   $( "#loader" ).fadeOut( "slow", function() {
     // Animation complete.
+  setTimeout(function(){ 
+    $(".popup").css("opacity", "1");
+}, 1000);
   });
 });
     </script>

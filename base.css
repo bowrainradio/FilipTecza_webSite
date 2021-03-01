@@ -142,6 +142,58 @@ picture img {
     animation: spin 2s infinite;
 }
 
+.popup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    height: 340px;
+    padding: 0 23px;
+    background: #000;
+    color: #ccc;
+    z-index: 100;
+    opacity: 0;
+}
+
+.popup h2, h3 {
+    text-align: center;
+}
+
+.popup span {
+    color: #FFCC00;
+}
+
+.popup a {
+    color: #FFCC00;
+    border-bottom: 1px solid #FFCC00;
+}
+
+.popup ul {
+    list-style:none;
+}
+.popup ul li {
+    margin: 20px;
+}
+
+.popup ul li::before {
+    content: "🥺 ";
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.close-button:hover {
+    color: #FFCC00;
+}
+
 
 /* === RWD === */
 
@@ -176,5 +228,16 @@ picture img {
 
     .block {
         max-width: 80%;
+    }
+    .popup {
+        overflow-y: scroll;
+    }
+
+    .popup ul {
+        padding: 0;
+    }
+
+    .popup ul li {
+        margin: 18px 0;
     }
 }
