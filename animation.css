@@ -22,6 +22,15 @@
     }
   }
 
+
+@keyframes Btn-shake {
+  0% {transform: rotateZ(0deg) translate(0,0);}
+  20% {transform: rotateZ(10deg) translate(5px,-2px);}
+  40% {transform: rotateZ(-10deg) translate(-5px,2px);}
+  60% {transform: rotateZ(11deg)  translate(4px,-1px);}
+  80% {transform: rotateZ(0deg) translate(0px,0px);}
+}
+
   /* === LOADER.CSS (RAINBOW) === */
 
 @keyframes rainbow {

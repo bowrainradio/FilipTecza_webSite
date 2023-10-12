@@ -17,12 +17,19 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* === HEADER === */
 
 .welcome {
+    font-size: 1.2em;
     max-width: 60%;
     margin: auto;
 }
+
+
 
 .block {
     display: block;
@@ -30,11 +37,94 @@ a {
     text-align: left;
 }
 
+.chapter-head {
+    text-align:center; 
+    padding: 20px; 
+    font-weight: normal; 
+    text-decoration: underline black 2px;
+}
+
+/* == Slider */
+
+.slick {
+  width: 100%;
+  background-color: transparent;
+  margin: 50px 0;
+}
+
+.slick h1 {
+    color: #000;
+}
+
+#slick-head {
+    text-align: center;
+}
+
+#slick-head h1 {
+    display: inline-block;
+}
+#slick-head button{
+    font-size: 2em;
+    border: none;
+    background: none;
+}
+
+#slick-head button:hover{
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+/* #slick-head:before {
+    font-family: FontAwesome;
+    content: '\f177';
+}
+
+#slick-head:after {
+    font-family: FontAwesome;
+    content: '\f178';
+} */
+
+.slick h1:hover{
+    color:red;
+}
+
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 100px 0px;
+    margin: 10px;
+    background-color: #EFEFEF;
+    transition: all 0.3s ease;
+    height: auto;
+    text-align: center;
+}
+  
+.slick-current,
+.slick-center {
+    background:rgb(255, 204, 0);
+    padding: 100px 0px;
+}
+
+.slide-hash {
+    color:darkred;
+}
+
+
 /* === LINK GALLERY === */
 
 .elements {
     display: grid;
-    padding: 5em 5em;
+    padding: 1em 5em;
     padding-right: 1.5em;
     grid-template-columns: repeat(12, 8%);
     grid-template-rows: repeat(9, 3em);
@@ -124,6 +214,32 @@ picture img {
 }
 
 /* === FOOTER === */
+#bottomBtn {
+    position: fixed;
+    top: 20px;
+    right: 10%;
+    width: 100px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px;
+    background-color: #FFCC00;
+    border: #000;
+    z-index: 100;
+    display: none;
+    animation: Btn-shake 2s infinite;
+}
+
+#bottomBtn:hover {
+    
+    background-color: #ffa600c9;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+#bottomBtn:active {
+    transform: scale(0.8);
+}
 
 .bottomMenu {
     display: none;
@@ -147,7 +263,7 @@ picture img {
     bottom: 0;
     right: 0;
     overflow: hidden;
-    height: 340px;
+    height: 220px;
     padding: 0 23px;
     background: #000;
     color: #ccc;
@@ -176,7 +292,7 @@ picture img {
 }
 
 .popup ul li::before {
-    content: "🥺 ";
+    content: "💛 ";
 }
 
 .close-button {
@@ -199,7 +315,7 @@ picture img {
 
 
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px ){
  
     .card-tall {
         grid-row: span 2 / auto;
@@ -213,7 +329,7 @@ picture img {
 @media screen and (max-width: 640px){
     
     .elements {
-        padding: 3em 3em 5em;
+        padding: 3em 3em 1em;
         grid-gap: 2em;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(6, 2em);
@@ -239,5 +355,11 @@ picture img {
 
     .popup ul li {
         margin: 18px 0;
+    }
+    #bottomBtn {
+        position: fixed;
+        top: 20px;
+        right: 10%;
+        width: 100px;
     }
 }

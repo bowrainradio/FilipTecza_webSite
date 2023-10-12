@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="base.css">
     <title>Rainbow CV</title>
 </head>
 <body class="page">
     <div id="loader">
-        <p class="click_me">Click Me</p>
+        <!-- <p class="click_me">Click Me</p> -->
         <div class="loading">
             <div class="item"></div>
             <div class="item"></div>
@@ -20,14 +21,13 @@
             <div class="item"></div>
             <div class="item"></div>
         </div>
-        <p class="loading_text">Loading</p>
     </div>
     <header>
         <div class="welcome">
             <div class="block">
                     <p class="tagline">
                         <span class="tagline-skill"><span class="tagline-skill_inner">Filip Tecza</span></span>
-                <p>Hi, I’m Filip - I recently relocated to the USA and received necessary documents to legally work in the USA (I do not require sponsorship). I love Tech and I’m always ready for something new. Constantly improving myself by learning new languages and new skills. Looking forward to working with you!</p>
+                <p>Hi, I’m Filip -I relocated to the USA 2 years ago and I'm currently a green card holder. I love Tech and I’m always ready for something new. Constantly improving myself by learning new languages and new skills. Looking forward to working with you!</p>
             </div>
         </div>
         <div class="elements">  
@@ -38,23 +38,97 @@
                 <div class="element"><span><a href="tel:+1 (352) 474-3600">Phone</a></span></div>
         </div>
     </header>
-    <div class="bottomMenu">Still working on it <div><span class="random_shit">🦄</span></div> &copy; Rainbow</div>
+    <button id="bottomBtn" class="btn">Contact Me</button>
+    <div class="bottomMenu"><div style="margin-top: 5px;"><span class="random_shit">🦄</span></div> &copy; Rainbow</div>
+    <div id="slick-head">
+        <button id="slick-arrow-left" class="fa fa-long-arrow-left"></button>
+        <h1 class="chapter-head">My Projects</h1> 
+        <button id="slick-arrow-right" class="fa fa-long-arrow-right next"></button>
+    </div>
+    <div class="slick">
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/sprite-animation.webp" alt="SliderImg_sprite_animation">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/Sprite-animation/index.html"><h1>Sprite-animation</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/matter-js.webp" alt="SliderImg_matter_js">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/matter.js/index.html"><h1>matter.js</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/card-grid.webp" alt="SliderImg_Love_counter">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/cards-grid/index.html"><h1>Card grid + Ajax</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/bootstrap.webp" alt="SliderImg_bootstrap">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/Slick_sliders/index.html"><h1>Bootstrap</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/landing-page.webp" alt="SliderImg_landing_page">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/PS_controller/index.html"><h1>Landing Page</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/login-page.webp" alt="SliderImg_login_page">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/login-page/index.html"><h1>login-page</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+        <div>
+            <div>
+                <img style="height: 200px; width: 100%; overflow: hidden;" src="img/Love-counter.webp" alt="SliderImg_Love_counter">
+            </div>
+            <div>
+                <a target="_blank" href="https://bowrainradio.github.io/Front-end_Portfolio/Love_counter/index.html"><h1>Love_counter</h1></a>
+                <p class="slide-hash">#html #css #ajax</p>
+            </div>    
+        </div>
+    </div>
     <main>
+        <h1 class="chapter-head">My analog photography</h1>
         <div class="photo-grid">
             <picture class="card card-tall">
                 <source srcset="img/1-large.webp" media="(min-width: 1000px)">
                 <source srcset="img/1-small.webp" media="(max-width: 500px)">
                 <img src="img/1-small.webp" alt="Small me">
             </picture>
+            <!-- <picture id="game" class="card card-wide"> -->
             <picture class="card card-wide">
                 <source srcset="img/2-large.webp" media="(min-width: 1000px)">
                 <source srcset="img/2-small.webp" media="(max-width: 500px)">
                 <img src="img/2-small.webp" alt="Big me">
+                
             </picture>
             <picture class="card card-tall">
-                <source srcset="img/5-large.webp" media="(min-width: 1000px)">
-                <source srcset="img/5-small.webp" media="(max-width: 500px)">
-                <img src="img/5-small.webp" alt="My poems">
+                <source srcset="img/3-large.webp" media="(min-width: 1000px)">
+                <source srcset="img/3-small.webp" media="(max-width: 500px)">
+                <img src="img/3-small.webp" alt="My poems">
             </picture>
             <picture class="card card-wide">
                 <source srcset="img/7-large.webp" media="(min-width: 1000px)">
@@ -68,71 +142,62 @@
             </picture>
             <picture class="card card-tall">
                 <source srcset="img/8-large.webp" media="(min-width: 1000px)">
-                <source srcset="img/8-small.webp" media="(max-width: 500px)">
-                <img src="img/8-small.webp" alt="My great great Grandpa colored using Photoshop">
+                <source srcset="img/17-small.webp" media="(max-width: 500px)">
+                <img src="img/17-small.webp" alt="My great great Grandpa colored using Photoshop">
             </picture>
             <picture class="card card-tall">
-                <source srcset="img/3-large.webp" media="(min-width: 1000px)">
-                <source srcset="img/3-small.webp" media="(max-width: 500px)">
-                <img src="img/3-small.webp" alt="Google Developer Days in Cracov">
+                <source srcset="img/6-large.webp" media="(min-width: 1000px)">
+                <source srcset="img/16-small.webp" media="(max-width: 500px)">
+                <img src="img/16-small.webp" alt="Google Developer Days in Cracov">
             </picture>
             <picture class="card card-wide">
-                <source srcset="img/9-large.webp" media="(min-width: 1000px)">
-                <source srcset="img/9-small.webp" media="(max-width: 500px)">
-                <img src="img/9-small.webp" alt="Polish Beer">
+                <source srcset="img/5-large.webp" media="(min-width: 1000px)">
+                <source srcset="img/5-small.webp" media="(max-width: 500px)">
+                <img src="img/5-small.webp" alt="Polish Beer">
+            </picture>
+            <picture class="card card-wide card-large">
+                <source srcset="img/5-large.webp" media="(min-width: 1000px)">
+                <source srcset="img/5-small.webp" media="(max-width: 500px)">
+                <img src="img/5-small.webp" alt="Polish Beer">
             </picture>
         </div>
         <div class="popup">
             <div class="close-button">[X]</div>
-            <h2>Hi Over there!</h2>
-            <p><span>Just moved to the USA so...</span> ;)<br> hit me up with something 💛</p>
             <h3>My Contact info:</h3>
             <ul>
                 <li>Call me: <a href="tel:+1 (352) 474-3600">+1 (352) 474-3600</a></li>
                 <li>Email me: <a href="mailto:rainbowdreamit@gmail.com">rainbowdreamit@gmail.com</a></li>
-                <li><a href="files/Filip_Tecza-Resume.pdf">My Resume</a></li>
+                <li><a href="files/Filip_Tecza-Resume.pdf">My Resume (PDF)</a></li>
             </ul>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
+    <script src="matter.js" type="text/javascript"></script>
+    <script src="script-game.js"></script>
     <script>
-        $(window).on('load',function(){
+        $(window).ready(function(){
     setTimeout(function(){ 
-    $(".click_me").css("opacity", "1");
+    $("#loader").fadeOut("slow");
 }, 1000);
-
-})
-
-// var intervalId = window.setInterval(function() {
-//     if (document.getElementsByTagName('body')[0] !== undefined) {
-//       window.clearInterval(intervalId);
-//       callback.call(this);
-//     }
-//   }, 1000);
-// }
-
-// function setVisible(selector, visible) {
-//   document.querySelector(selector).style.display = visible ? 'block' : 'none';
-// }
-
-// onReady(function() {
-//   setVisible('.page', true);
-//   setVisible('#loader', false);
-// });
-
-
-
-
-$(".click_me").click(function(){
-  $( "#loader" ).fadeOut( "slow", function() {
-    // Animation complete.
-  setTimeout(function(){ 
-    $(".popup").css("opacity", "1");
-}, 1000);
-  });
 });
+$(window).on('load',function(){
+    setTimeout(function(){ 
+    $(".popup").css("opacity", "1");
+}, 2000);
+
+});
+// $(".click_me").click(function(){
+//   $( "#loader" ).fadeOut( "slow", function() {
+//     // Animation complete.
+//   setTimeout(function(){ 
+//     $(".popup").css("opacity", "1");
+// }, 1000);
+//   });
+// });
     </script>
 </body>
 </html>
