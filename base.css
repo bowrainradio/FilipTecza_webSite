@@ -368,12 +368,12 @@ picture img {
         width: 100px;
     }
 
-    #slick-arrow-left {
+    #slick-head {
         display: none;
     }
 
-    #slick-arrow-right {
-        display: none;
+    #slick-head-mobile {
+        display: block;
     }
 
     .chapter-head {
