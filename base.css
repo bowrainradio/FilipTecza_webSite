@@ -368,7 +368,11 @@ picture img {
         width: 100px;
     }
 
-    #slick-head button {
+    #slick-arrow-left {
+        display: none;
+    }
+
+    #slick-arrow-right {
         display: none;
     }
 
