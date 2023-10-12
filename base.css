@@ -367,8 +367,12 @@ picture img {
         right: 10%;
         width: 100px;
     }
-    
-    #slick-head button {
-        font-size: 1.2em;
+
+    #slick-head h1 {
+        display: block;
+    }
+
+    .chapter-head {
+        padding: 0
     }
 }
