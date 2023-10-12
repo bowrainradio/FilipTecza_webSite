@@ -328,6 +328,10 @@ picture img {
 
 @media screen and (max-width: 640px){
     
+    .welcome {
+        max-width: 80%;
+    }
+    
     .elements {
         padding: 3em 3em 1em;
         grid-gap: 2em;
@@ -356,10 +360,15 @@ picture img {
     .popup ul li {
         margin: 18px 0;
     }
+    
     #bottomBtn {
         position: fixed;
         top: 20px;
         right: 10%;
         width: 100px;
+    }
+    
+    #slick-head button {
+        font-size: 1.5em;
     }
 }
