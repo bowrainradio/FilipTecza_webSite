@@ -368,8 +368,8 @@ picture img {
         width: 100px;
     }
 
-    #slick-head .fa {
-        display: none;
+    #slick-head button {
+        display: none !important;
     }
 
     .chapter-head {
