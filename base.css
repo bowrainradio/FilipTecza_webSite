@@ -368,12 +368,8 @@ picture img {
         width: 100px;
     }
 
-    #slick-head {
-        display: none;
-    }
-
-    #slick-head-mobile {
-        display: block;
+    #slick-head button {
+        display: none !important;
     }
 
     .chapter-head {
