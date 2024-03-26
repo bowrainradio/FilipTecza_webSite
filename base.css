@@ -324,6 +324,10 @@ picture img {
     .card-wide {
         grid-column: span 2 / auto;
     }
+    
+    .bottomMenu {
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -367,7 +371,11 @@ picture img {
         right: 10%;
         width: 100px;
     }
-
+    
+    .bottomMenu {
+        height: 55px;
+    }
+    
     #slick-head button {
         display: none !important;
     }
