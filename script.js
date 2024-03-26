@@ -76,3 +76,7 @@ $('#bottomBtn').on('click', function() {
 //    });
 //};
 console.log("Welcome my visitor from "+geoplugin_city()+", "+geoplugin_countryName())
+
+$.getScript("http://www.geoplugin.net/javascript.gp", function () {
+  console.log("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName())
+});
