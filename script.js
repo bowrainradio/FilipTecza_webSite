@@ -66,6 +66,7 @@ $('#bottomBtn').on('click', function() {
 });
 
  /* === IP Location TEST === */
+/*
 fetch('https://api.ipify.org?format=json')
 .then(function(response) {
   response.json().then(jsonData => {
@@ -77,3 +78,4 @@ fetch('https://api.ipify.org?format=json')
     });
   });
 });
+*/
