@@ -88,6 +88,8 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=4a0a0e2ab66c48c1830c30d1eb87441
     city = jsonData.city
     state = jsonData.state_prov
     country = jsonData.country_code3
+    //Adding city | state to the bottomMenu
+    $(".city").append(city +"|"+state)
     console.log("I know your IP Adress: "+ip_address)
     console.log("And you city: "+city)
     console.log("******Consider getting VPN, if I can find you, others will too******")
