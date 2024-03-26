@@ -66,17 +66,14 @@ $('#bottomBtn').on('click', function() {
 });
 
  /* === IP Location TEST === */
-//const getIP = async () => {
-//    let ip;
-//    await fetch('https://api.ipify.org/?format=json')
-//    .then(result => result.json())
-//    .then(data => {
-//        ip = data.ip;
-//        console.log(ip)
-//    });
-//};
-console.log("Welcome my visitor from "+geoplugin_city()+", "+geoplugin_countryName())
-
-$.getScript("http://www.geoplugin.net/javascript.gp", function () {
-  console.log("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName())
+fetch('https://api.ipify.org?format=json')
+.then(function(response) {
+  response.json().then(jsonData => {
+    ip_address = jsonData.ip
+    $.getScript(("http://www.geoplugin.net/json.gp?ip="+ip_address), function () {
+        console.log("I know your IP Adress: "+ip_address)
+        console.log("Consider getting VPN, if I can find you others will!!!!")
+        console.log("Welcome to my Website dear visitor from "+geoplugin_city()+", "+geoplugin_countryName())
+    });
+  });
 });
