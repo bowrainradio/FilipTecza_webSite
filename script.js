@@ -66,12 +66,13 @@ $('#bottomBtn').on('click', function() {
 });
 
  /* === IP Location TEST === */
-const getIP = async () => {
-    let ip;
-    await fetch('https://api.ipify.org/?format=json')
-    .then(result => result.json())
-    .then(data => {
-        ip = data.ip;
-        console.log(ip)
-    });
-};
+//const getIP = async () => {
+//    let ip;
+//    await fetch('https://api.ipify.org/?format=json')
+//    .then(result => result.json())
+//    .then(data => {
+//        ip = data.ip;
+//        console.log(ip)
+//    });
+//};
+console.log("Welcome my visitor from "+geoplugin_city()+", "+geoplugin_countryName())
